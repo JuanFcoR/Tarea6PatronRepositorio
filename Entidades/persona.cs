@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Tarea6JuanFcoR.Entidades
 {
-    public class Personas
+    public class persona
     {
+        [Key]
         public Int64 idpersona { get; set; }
         public int dni { get; set; }
         public string nombre { get; set; }

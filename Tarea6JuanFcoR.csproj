@@ -33,7 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,18 +53,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\compraRepositorio.cs" />
+    <Compile Include="BLL\IRepository.cs" />
+    <Compile Include="BLL\RepositorioBase.cs" />
+    <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\cargo.cs" />
     <Compile Include="Entidades\categoria.cs" />
     <Compile Include="Entidades\cliente.cs" />
+    <Compile Include="Entidades\compra.cs" />
+    <Compile Include="Entidades\detallecompra.cs" />
+    <Compile Include="Entidades\detalleventa.cs" />
+    <Compile Include="Entidades\empleado.cs" />
     <Compile Include="Entidades\estado.cs" />
     <Compile Include="Entidades\imagen.cs" />
     <Compile Include="Entidades\marca.cs" />
     <Compile Include="Entidades\modelo.cs" />
     <Compile Include="Entidades\permiso.cs" />
-    <Compile Include="Entidades\Personas.cs" />
+    <Compile Include="Entidades\persona.cs" />
+    <Compile Include="Entidades\producto.cs" />
+    <Compile Include="Entidades\proveedor.cs" />
     <Compile Include="Entidades\tipocomprobante.cs" />
     <Compile Include="Entidades\tipopersona.cs" />
     <Compile Include="Entidades\unidadmedida.cs" />
+    <Compile Include="Entidades\usuario.cs" />
+    <Compile Include="Entidades\usuario_has_permiso.cs" />
+    <Compile Include="Entidades\venta.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +95,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,7 +110,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DAL\" />
+    <Folder Include="Test\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace Tarea6JuanFcoR.Entidades
 {
-    public class permiso
+    public class empleado
     {
         [Key]
-        public int idpermiso { get; set; }
-        public string descripcion { get; set; }
-        public string funcionalidad { get; set; }
+        public int idempleado { get; set; }
+        public int estado_idestado { get; set; }
+        public int cargo_cargoid { get; set; }
+        public int persona_idpersona { get; set; }
     }
 }
