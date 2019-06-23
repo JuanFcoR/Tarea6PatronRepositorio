@@ -37,7 +37,8 @@ namespace Tarea6JuanFcoR.Entidades
             total = 0;
         }
     }
-    }
+
+}
 
     
-}
+

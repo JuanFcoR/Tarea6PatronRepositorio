@@ -9,8 +9,8 @@ namespace Tarea6JuanFcoR.Entidades
 {
     public class detalleventa
     {
-        [Key]   
-        public Int64 iddetalleventa { get; set; }
+        [Key]
+        public int iddetalleventa { get; set; }
         public int venta_idventa { get; set; }
         public int producto_idproducto { get; set; }
         public double unidades { get; set; }

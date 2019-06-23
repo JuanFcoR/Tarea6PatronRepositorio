@@ -10,7 +10,7 @@ namespace Tarea6JuanFcoR.Entidades
     public class compra
     {
         [Key]
-        public Int64 idcompra { get; set; }
+        public int idcompra { get; set; }
         public int usuario_usuarioid { get; set; }
         public DateTime fechacompra { get; set; }
         public int provedor_idprovedor { get; set; }

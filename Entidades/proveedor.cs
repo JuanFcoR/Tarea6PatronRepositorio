@@ -10,7 +10,7 @@ namespace Tarea6JuanFcoR.Entidades
     public class proveedor
     {
         [Key]
-        public int provedorid { get; set; }
+        public int idprovedor { get; set; }
         public int persona_idpersona { get; set; }
     }
 }

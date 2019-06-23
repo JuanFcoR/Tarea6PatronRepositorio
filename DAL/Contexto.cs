@@ -16,7 +16,7 @@ namespace Tarea6JuanFcoR.DAL
         public DbSet<producto> producto { get; set; }
         public DbSet<compra> compra { get; set; }
         public DbSet<detallecompra> detallecompra { get; set; }
-        public DbSet<compra> detalleventa { get; set; }
+        public DbSet<detalleventa> detalleventa { get; set; }
         public DbSet<empleado> empleado { get; set; }
         public DbSet<estado> estado { get; set; }
         public DbSet<imagen> imagen { get; set; }

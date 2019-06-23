@@ -80,6 +80,7 @@ namespace Tarea6JuanFcoR.BLL
 
                 throw;
             }
+            _contexto.Dispose();
             return paso;
         }
 

@@ -14,13 +14,18 @@ namespace Tarea6JuanFcoR.Entidades
         public Int64 idproducto { get; set; }
         public string nombre { get; set; }
         public string descripcion { get; set; }
-        public string fechafabricacion { get; set; }
+        public DateTime fechafabricacion { get; set; }
         public double costocompra { get; set; }
         public double stock { get; set; }
-        public int unidadmedida_idunidadmedida { get; set; }
-        public int imagen_idimagen { get; set; }
-        public int categoria_idcategoria { get; set; }
-        public int marca_idmarca { get; set; }
-        public int modelo_idmodelo { get; set; }
+        public int idunidadmedida { get; set; }
+        public int idimagen { get; set; }
+        public int idcategoria { get; set; }
+        public int idmarca { get; set; }
+        public int idmodelo { get; set; }
+
+        public producto()
+        {
+
+        }
     }
 }

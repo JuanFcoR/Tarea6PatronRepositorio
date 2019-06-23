@@ -11,6 +11,6 @@ namespace Tarea6JuanFcoR.Entidades
     {
         [Key]
         public int usuario_idusuario { get; set; }
-        public int permiso_idpermiso { get; set; }
+        public int idpermiso { get; set; }
     }
 }
