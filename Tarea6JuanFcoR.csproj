@@ -85,6 +85,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\Entidades\cargoTest.cs" />
+    <Compile Include="Test\Entidades\categoriaTest.cs" />
+    <Compile Include="Test\Entidades\clienteTest.cs" />
+    <Compile Include="Test\Entidades\detallecompraTest.cs" />
+    <Compile Include="Test\Entidades\detalleventaTest.cs" />
+    <Compile Include="Test\Entidades\empleadoTest.cs" />
+    <Compile Include="Test\Entidades\estadoTest.cs" />
+    <Compile Include="Test\Entidades\imagenTest.cs" />
+    <Compile Include="Test\Entidades\marcaTest.cs" />
+    <Compile Include="Test\Entidades\modeloTest.cs" />
+    <Compile Include="Test\Entidades\permisoTest.cs" />
+    <Compile Include="Test\Entidades\personaTest.cs" />
+    <Compile Include="Test\Entidades\productoTests.cs" />
+    <Compile Include="Test\Entidades\proveedorTest.cs" />
+    <Compile Include="Test\Entidades\tipocomprobanteTest.cs" />
+    <Compile Include="Test\Entidades\tipopersonaTest.cs" />
+    <Compile Include="Test\Entidades\unidadmedidaTest.cs" />
+    <Compile Include="Test\Entidades\usuarioTest.cs" />
+    <Compile Include="Test\Entidades\usuario_has_permisoTest.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -104,10 +123,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Test\App.config" />
+    <None Include="Test\packages.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Test\Tarea6JuanFcoRTests3.csproj" />
+    <Content Include="Test\Tarea6JuanFcoRTests3.pdb" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
